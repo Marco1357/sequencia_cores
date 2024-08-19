@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ac9d9d;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-gap: 20px;
+}
+
+.button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+#red {
+  background-color: red;
+}
+
+#green {
+  background-color: green;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+.button.active {
+  opacity: 0.5;
+}
