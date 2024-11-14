@@ -9,7 +9,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(2, 180px);
   grid-gap: 20px;
 }
 
