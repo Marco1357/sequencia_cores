@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jogo de Memória de Cores</title>
+    <title>Jogo de Memorização</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="favicon.jpeg" type="image/x-icon" />
   </head>
   <body>
-    <div class="container">
-      <div class="button" id="red" onclick="startGame('red')"></div>
-      <div class="button" id="green" onclick="startGame('green')"></div>
-      <div class="button" id="blue" onclick="startGame('blue')"></div>
-      <div class="button" id="yellow" onclick="startGame('yellow')"></div>
+    <h1 id="game-title">Movimente sua Memória</h1>
+    <div id="game-container">
+      <div id="red" class="color-button"></div>
+      <div id="green" class="color-button"></div>
+      <div id="blue" class="color-button"></div>
+      <div id="yellow" class="color-button"></div>
     </div>
-
-    <!-- Audio elements -->
     <audio id="sound-red" src="sounds/red.mp3"></audio>
     <audio id="sound-green" src="sounds/green.mp3"></audio>
     <audio id="sound-blue" src="sounds/blue.mp3"></audio>

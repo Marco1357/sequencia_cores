@@ -1,42 +1,52 @@
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
-  background-color: #ac9d9d;
-  margin: 0;
+  background-color: #3e3b3b;
+  font-family: Arial, sans-serif;
 }
 
-.container {
+#game-title {
+  font-size: 2em;
+  color: #522df7;
+  margin-bottom: 60px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#game-container {
   display: grid;
-  grid-template-columns: repeat(2, 180px);
-  grid-gap: 20px;
+  grid-template-columns: repeat(2, 150px);
+  gap: 20px;
 }
 
-.button {
-  width: 170px;
-  height: 170px;
+.color-button {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   cursor: pointer;
-  transition: opacity 0.4s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s;
+}
+
+.color-button:active {
+  transform: scale(0.9);
 }
 
 #red {
-  background-color: red;
+  background-color: #f44336;
 }
 
 #green {
-  background-color: green;
+  background-color: #4caf50;
 }
 
 #blue {
-  background-color: blue;
+  background-color: #2196f3;
 }
 
 #yellow {
-  background-color: yellow;
-}
-
-.button.active {
-  opacity: 0.4;
+  background-color: #ffeb3b;
 }
