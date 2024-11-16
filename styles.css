@@ -4,49 +4,55 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #3e3b3b;
-  font-family: Arial, sans-serif;
+  background-color: #b5d3af;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 #game-title {
   font-size: 2em;
-  color: #522df7;
-  margin-bottom: 60px;
+  color: #333;
   text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 0.1em;
 }
 
-#game-container {
+.touch {
+  font-size: 1em;
+  font-weight: bolder;
+  color: #646060;
+  margin: 10px 0 40px;
+  text-align: center;
+}
+
+.container {
   display: grid;
-  grid-template-columns: repeat(2, 150px);
-  gap: 20px;
+  grid-template-columns: repeat(2, 180px);
+  grid-gap: 20px;
 }
 
-.color-button {
-  width: 150px;
-  height: 150px;
+.button {
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.1s;
-}
-
-.color-button:active {
-  transform: scale(0.9);
+  transition: opacity 0.4s;
 }
 
 #red {
-  background-color: #f44336;
+  background-color: red;
 }
 
 #green {
-  background-color: #4caf50;
+  background-color: green;
 }
 
 #blue {
-  background-color: #2196f3;
+  background-color: blue;
 }
 
 #yellow {
-  background-color: #ffeb3b;
+  background-color: yellow;
+}
+
+.button.active {
+  opacity: 0.4;
 }
